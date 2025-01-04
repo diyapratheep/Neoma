@@ -21,7 +21,8 @@ Here is the link to demo video [Demo Video](https://drive.google.com/file/d/1dlH
 
 3. **User Interaction**: Users can interact with the map, click on objects to get more information, and explore the trajectories of these objects in detail.
 
-4. **Embed Video of Project Demo**: You can watch the demo video to see how the app functions in action. [Demo Video](https://drive.google.com/file/d/1dlHVB51UQFnFpamG4iRifZrS97z6NLqn/view?usp=sharing)
+4. **Embed Video of Project Demo**: You can watch the demo video to see how the app functions in action.
+   ![Project Demo](https://github.com/diyapratheep/Neoma/blob/main/demo%20gif/demo%20video.gif)
 
 
 
