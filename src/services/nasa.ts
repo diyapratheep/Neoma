@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { NearEarthObject } from '../types/neo';
 
-const NASA_API_KEY = 'DEMO_KEY';
+const NASA_API_KEY = 'hehehehehe';
 const BASE_URL = 'https://api.nasa.gov/neo/rest/v1';
 
 export async function getNearEarthObjects(startDate: string, endDate: string): Promise<NearEarthObject[]> {

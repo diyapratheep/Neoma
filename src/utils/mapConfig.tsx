@@ -12,21 +12,23 @@ export const configureLeafletMarkers = () => {
 
 // Custom icons for hazardous and non-hazardous objects
 export const createCustomIcon = (isHazardous: boolean) => {
-  return   L.divIcon({
-    className: 'custom-icon',
-    html: `
-      <div class="flex items-center justify-center w-10 h-10 ${
-        isHazardous ? 'bg-orange-500' : 'bg-blue-500'
-      } rounded-full">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c1.656 0 3-1.344 3-3s-1.344-3-3-3-3 1.344-3 3 1.344 3 3 3zm0 4c3.333 0 6 2.667 6 6H6c0-3.333 2.667-6 6-6z"/>
+    return L.divIcon({
+      className: 'custom-marker',
+      html: `
+      <div class="flex items-center justify-center w-10 h-10 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24">
+          <!-- Body (Inverted Oval with Pointed Top) -->
+          <path fill="${isHazardous ? '#F97316' : '#3B82F6'}" stroke="#FFFFFF" stroke-width="1" d="M12 15c3 0 6-3 6-6s-3-6-6-6-6 3-6 6 3 6 6 6z" />
+          <!-- Head (Circle at the Bottom) -->
+          <circle cx="12" cy="18" r="3" fill="${isHazardous ? '#F97316' : '#3B82F6'}" stroke="#FFFFFF" stroke-width="1" />
         </svg>
       </div>
     `,
-    iconSize: [40, 40],
-    iconAnchor: [20, 40],
-    popupAnchor: [0, -40],
-  });}
+      iconSize: [40, 40],
+      iconAnchor: [20, 40],
+      popupAnchor: [0, -40],
+    });
+  };
 
 export const MAP_CONFIG = {
   center: [0, 0] as [number, number],
