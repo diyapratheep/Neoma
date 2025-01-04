@@ -42,7 +42,7 @@ export default function InfoPanel({ objects }: InfoPanelProps) {
             <div className="flex items-center justify-between">
               <span className="font-medium">{obj.name}</span>
               {obj.is_potentially_hazardous_asteroid && (
-                <span className="px-2 py-1 text-xs bg-amber-100 text-amber-700 rounded-full">
+                <span className="px-2 py-1 text-xs bg-amber-100 text-amber-700 rounded font-semibold">
                   Hazardous
                 </span>
               )}
